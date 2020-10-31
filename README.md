@@ -1,2 +1,1 @@
-# sylvanas.github.io
-Site do projeto individual 
+Site do projeto individual
