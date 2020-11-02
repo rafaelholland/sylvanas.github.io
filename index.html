@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Sylvanas Windrunner</title>
 </head>
 
@@ -23,10 +24,6 @@
             <video autoplay muted loop class="videoBackground">
                 <source src="./videos/sylvanas-bg2_1.mp4">
             </video>
-            <!-- <div class="videoBackground"></div> -->
-        </section>
-        <section class="outrosGames">
-            <div class="outrosGamesDiv"></div>
         </section>
         <section class="story">
             <div class="containerStory">
@@ -41,7 +38,9 @@
                             nunca se
                             equiparou a ela.
                         </div>
-                        <div class="video1"><img src="./imagens/story1/botaoPlay1.png" class="imgStory1"></div>
+                        <div class="video1"><img src="./imagens/story-images/story1/botaoPlay1.png" id="abrir"
+                                class="imgStory1">
+                        </div>
 
                     </div>
                     <div class="storyPart2 story">
@@ -153,7 +152,29 @@
                     </div>
                 </div>
         </section>
+        <!-- Mapa interativo -->
+        <section class="map">
+            <div class="map-container">
+                <div class="map-controller">
+                    <img src="./imagens/wow-map.png" class="map-img">
+                </div>
+            </div>
+        </section>
+        <!-- 1 Pin -->
+        <section class="modal-container" id="container">
+            <div class="modal">
+                <button id="fechar" class="fechar">
+                    X
+                </button>
+                <section class="modal-body">
+                    <video controls autoplay class="videoConfig">
+                        <source src="./videos/sylvanas-intro.mp4">
+                    </video>
+                </section>
+            </div>
+        </section>
     </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>

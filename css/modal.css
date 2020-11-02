@@ -1,0 +1,52 @@
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container.ativo {
+  display: flex;
+}
+
+.ativo,
+.modal {
+  animation: modal 0.3s forwards;
+}
+
+.modal {
+  background: #1a1b1f;
+  color: white;
+  width: 65%;
+  max-height: 80vh;
+  overflow-y: scroll;
+  border: 10px solid black;
+  position: relative;
+  overflow: hidden;
+}
+.fechar {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: fixed;
+  top: -20px;
+  right: 5px;
+  background: yellow;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  color: black;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.modal label {
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
