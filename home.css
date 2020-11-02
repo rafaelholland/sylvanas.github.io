@@ -40,19 +40,21 @@ section {
 .outrosGames {
   height: 50vh;
   background-color: blue;
+  margin-top: -4px;
 }
 .containerStory {
-  width: 80%;
+  background-image: url("./imagens/background-story.png");
+  background: no-repeat cover
+  /* width: 80%; */
   margin: 0 auto;
 }
 .story {
-  background-image: url();
 }
 .storyPart3,
 .storyPart4,
 .storyPart5 {
   height: 33vh;
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -64,17 +66,16 @@ section {
 .storyPart8,
 .storyPart9 {
   height: 50vh;
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .video1 {
   height: 75%;
-  width: 45%;
+  width: 36%;
   background-repeat: no-repeat;
   background-size: cover;
-
   background-image: url(./imagens/story1/story1.png);
   display: flex;
   align-items: center;
