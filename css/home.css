@@ -5,6 +5,24 @@
   cursor: url("../imagens/cursores/select.png"), auto;
   color: white;
 }
+@font-face {
+  font-family: wow-font;
+  src: url(../fontes/LifeCraft_Font.woff);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #682f14;
+  border-radius: 40px;
+}
 
 .container {
   scroll-snap-type: y mandatory;
@@ -37,6 +55,8 @@ section {
   letter-spacing: 2px;
 }
 .ulNavbar li {
+  font-family: wow-font;
+  color: black;
   margin-left: 55px;
 }
 .videoBackground {
@@ -51,26 +71,23 @@ section {
   margin: 0 auto;
 }
 
-.storyPart3,
-.storyPart4,
-.storyPart5 {
+.storyContainer {
+  height: 50vh;
+  /* background: blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.storyContainerText {
   height: 33vh;
   /* background: blue; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.storyPart1,
-.storyPart2,
-.storyPart6,
-.storyPart7,
-.storyPart8,
-.storyPart9 {
-  height: 50vh;
-  /* background: red; */
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+
+.storyContent {
+  width: 40%;
 }
 .video1 {
   height: 60%;
@@ -82,28 +99,83 @@ section {
   align-items: center;
   justify-content: center;
 }
-.story1 {
-  width: 40%;
+
+.video2 {
+  height: 60%;
+  width: 36%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagens/story-images/story2/arthas.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.imgStory1 {
+.video3 {
+  height: 60%;
+  width: 36%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagens/story-images/story3/warchief.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video4 {
+  height: 60%;
+  width: 36%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagens/story-images/story7/teldrasil.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video5 {
+  height: 60%;
+  width: 36%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagens/story-images/story8/x1bolado.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video6 {
+  height: 60%;
+  width: 36%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../imagens/story-images/story9/lich-king.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botaoPlay {
   cursor: url("../imagens/cursores/cursor-pointer.png"), auto;
   height: 95px;
+}
+.botaoPlay:hover {
+  height: 100px;
 }
 .videoConfig {
   width: 100%;
   max-height: 79vh;
 }
-.imgStory1:hover {
-  height: 100px;
-}
+
 .map {
   width: 100%;
 }
 .map-controller {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 .map-img {
   width: 80%;
   height: 100vh;
+}
+.pin1 {
+  height: 50px;
+  position: absolute;
+  top: 10%;
 }
