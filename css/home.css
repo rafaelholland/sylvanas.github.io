@@ -179,3 +179,22 @@ section {
   position: absolute;
   top: 10%;
 }
+.pin2 {
+  top: 27%;
+  height: 50px;
+  position: absolute;
+  right: 15%;
+}
+.pin3 {
+  top: 42%;
+  height: 50px;
+  position: absolute;
+  left: 27%;
+}
+.pin4 {
+    top: 33%;
+    height: 50px;
+    position: absolute;
+    left: 57%;
+}
+
