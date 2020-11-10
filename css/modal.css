@@ -72,9 +72,8 @@
 .modal-map {
   background: #1a1b1f;
   color: white;
-  width: 55%;
-  height: 80vh;
-  overflow-y: scroll;
+  width: 80%;
+  height: 85vh;
   border: 10px solid black;
   position: relative;
   display: flex;

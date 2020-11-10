@@ -1,4 +1,5 @@
 * {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -24,43 +25,43 @@ html {
   border-radius: 40px;
 }
 
-.container {
-  scroll-snap-type: y mandatory;
-}
 body {
   background-image: url(../imagens/background-geral.png);
 }
-section {
-  scroll-snap-align: start;
-}
-.navbar {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+.titles {
   position: absolute;
-}
-.containerNav {
-  width: 80%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
-.ulNavbar {
-  display: flex;
-  z-index: 10;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-.ulNavbar li {
+
+.principal-title h1 {
   font-family: wow-font;
   color: black;
-  margin-left: 55px;
+  font-size: 145px;
+  text-align: center;
+}
+.principal-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principal-subtitle p {
+  font-size: 60px;
+  font-family: wow-font;
+  color: black;
+}
+.arco {
+  transform: rotate(225deg);
+  width: 100px;
+  margin-bottom: 40px;
+}
 }
 .videoBackground {
-  width: 100%;
+  width: 102%;
   background-color: grey;
 }
 
@@ -192,9 +193,8 @@ section {
   left: 27%;
 }
 .pin4 {
-    top: 33%;
-    height: 50px;
-    position: absolute;
-    left: 57%;
+  top: 33%;
+  height: 50px;
+  position: absolute;
+  left: 57%;
 }
-
