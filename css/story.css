@@ -1,3 +1,7 @@
+.story {
+  margin-top: -5px;
+  background-image: url("../imagens/bg-teste.png");
+}
 .storyPart3,
 .storyPart4,
 .storyPart5 {
@@ -19,16 +23,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.video1 {
-  height: 60%;
-  width: 36%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../imagens/story1/story1.png);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .story1 {
   width: 40%;
 }

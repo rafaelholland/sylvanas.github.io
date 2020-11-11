@@ -41,7 +41,7 @@ body {
 .principal-title h1 {
   font-family: wow-font;
   color: black;
-  font-size: 145px;
+  font-size: 120px;
   text-align: center;
 }
 .principal-subtitle {
@@ -50,7 +50,7 @@ body {
   align-items: center;
 }
 .principal-subtitle p {
-  font-size: 60px;
+  font-size: 45px;
   font-family: wow-font;
   color: black;
 }
@@ -59,10 +59,11 @@ body {
   width: 100px;
   margin-bottom: 40px;
 }
-}
+
 .videoBackground {
-  width: 102%;
-  background-color: grey;
+  width: 100%;
+  /* height: 100vh; */
+  overflow-x: hidden;
 }
 
 .containerStory {
@@ -88,7 +89,14 @@ body {
 }
 
 .storyContent {
+  line-height: 19.5px;
   width: 40%;
+}
+.videoStory {
+  margin-top: -5px;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
 }
 .video1 {
   height: 60%;
