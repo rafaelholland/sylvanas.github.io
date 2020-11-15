@@ -186,3 +186,20 @@ function cliqueForaModal7(event){
 botaoAbrir7.addEventListener('click', abrirModal7);
 botaoFechar7.addEventListener('click', fecharModal7);
 containerModal7.addEventListener('click', cliqueForaModal7);
+
+
+
+function flechaScroll(){
+  var flecha = document.getElementById("flechaId");
+  var arco = document.getElementById("arcoId");
+  setTimeout(() => {
+    var mapaScroll = document.getElementById("scrollMap");
+    arco.classList.add("arcoNovo");
+  mapaScroll.scrollIntoView();
+  }, 300);
+
+  setTimeout(() => {
+    
+    flecha.classList.add("batata");
+  }, 1500);
+}

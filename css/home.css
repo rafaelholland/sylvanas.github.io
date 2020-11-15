@@ -21,7 +21,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #682f14;
+  background: #460f08;
   border-radius: 40px;
 }
 
@@ -29,6 +29,7 @@ body {
   background-image: url(../imagens/background-geral.png);
 }
 .titles {
+  z-index: 10000000;
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -55,14 +56,33 @@ body {
   color: black;
 }
 .arco {
-  transform: rotate(225deg);
+  height: 196px;
+  width: 317px;
+  background-size: cover;
+  background-image: url("../imagens/arco-idle.png");
+}
+.arcoNovo {
+  height: 196px;
+  width: 317px;
+  background-size: cover;
+  background-image: url("../imagens/arco-normal.png");
+}
+.flecha {
+  position: fixed;
+  bottom: 0;
+  left: 49.4%;
+  height: 259px;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100px;
-  margin-bottom: 40px;
+  background-image: url("../imagens/flecha.png");
+}
+.batata {
+  position: absolute;
 }
 
 .videoBackground {
   width: 100%;
-  /* height: 100vh; */
   overflow-x: hidden;
 }
 
@@ -92,12 +112,7 @@ body {
   line-height: 19.5px;
   width: 40%;
 }
-.videoStory {
-  margin-top: -5px;
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-}
+
 .video1 {
   height: 60%;
   width: 36%;
@@ -206,3 +221,12 @@ body {
   position: absolute;
   left: 57%;
 }
+
+/* @keyframes arco {
+  from {
+    background-image: url("../imagens/arco-normal.png");
+  }
+  to {
+    background-image: url("../imagens/arco-idle.png");
+  }
+} */

@@ -11,14 +11,16 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="titles">
             <div class="principal-title">
-                <h1>SYLVANAS<BR>WINDRUNNER</h1>
+                <h1 id="batata">SYLVANAS<BR>WINDRUNNER</h1>
             </div>
             <div class="principal-subtitle">
                 <p>ATIRE A FLECHA</p>
-                <img src="./imagens/arco-e-flecha.png" class="arco">
+                <span id="arcoId" class="arco" onclick="flechaScroll()"></span>
+
             </div>
         </div>
         <section class="videoBg">
@@ -29,6 +31,7 @@
         <section class="story">
             <div class="containerStory">
                 <div class="story1cont">
+
                     <div class="storyContainer">
                         <div class="storyContent">Senhora Sylvanas Correventos, também conhecida como “A Dama Sombria” e
                             “Rainha
@@ -186,10 +189,13 @@
                 <!-- 1 Pin -->
 
             </div>
+            <div id="flechaId" class="flecha"></div>
+
         </section>
         <section>
 
         </section>
+        <span id="scrollMap"></span>
         <!-- Vídeos história -->
 
         <!-- Video 1 -->
@@ -310,6 +316,7 @@
         <!-- Fim Pin 2 -->
     </div>
     <script src="./modal.js"></script>
+    <script src="flecha.js"></script>
 </body>
 
 </html>
