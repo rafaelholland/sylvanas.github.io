@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-image: url(../imagens/background-geral.png);
+  background-image: url(../imagens/teste-img.jpg);
 }
 .titles {
   z-index: 10000000;
@@ -53,7 +53,7 @@ body {
   font-size: 53px;
   font-family: wow-font;
   color: black;
-  margin-bottom: 45px;
+  margin-bottom: 94px;
 }
 .arco {
   height: 196px;

@@ -194,8 +194,11 @@ function flechaScroll(){
   var arco = document.getElementById("arcoId");
   setTimeout(() => {
     var mapaScroll = document.getElementById("scrollMap");
+    var audio = document.getElementById("audioArrow");
+
+    audio.play();
     arco.classList.add("arcoNovo");
-  mapaScroll.scrollIntoView();
+    mapaScroll.scrollIntoView();
   }, 300);
 
   setTimeout(() => {
