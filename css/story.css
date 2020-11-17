@@ -1,6 +1,8 @@
 .story {
   margin-top: -5px;
-  background-image: url("../imagens/bg-teste.png");
+  background-image: url("../imagens/background-sylvanas.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .storyPart3,
 .storyPart4,

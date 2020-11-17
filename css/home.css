@@ -110,6 +110,7 @@ body {
 }
 
 .storyContent {
+  background-size: cover;
   font-family: "Source Code Pro", monospace;
   line-height: 19.5px;
   width: 50%;
