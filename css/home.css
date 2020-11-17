@@ -1,5 +1,4 @@
 * {
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -32,7 +31,7 @@ body {
   z-index: 10000000;
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,9 +50,10 @@ body {
   align-items: center;
 }
 .principal-subtitle p {
-  font-size: 45px;
+  font-size: 53px;
   font-family: wow-font;
   color: black;
+  margin-bottom: 45px;
 }
 .arco {
   height: 196px;
@@ -62,15 +62,15 @@ body {
   background-image: url("../imagens/arco-idle.png");
 }
 .arcoNovo {
-  height: 196px;
-  width: 317px;
+  height: 157px;
+  width: 378px;
   background-size: cover;
   background-image: url("../imagens/arco-normal.png");
 }
 .flecha {
   position: fixed;
   bottom: 0;
-  left: 49.4%;
+  left: 49%;
   height: 259px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -79,17 +79,18 @@ body {
 }
 .batata {
   position: absolute;
+  bottom: 0;
 }
 
-.videoBackground {
-  width: 100%;
+.videoBG {
   overflow-x: hidden;
+  width: 100%;
 }
 
 .containerStory {
   background-image: url("./imagens/background-story.png");
   background: no-repeat cover;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -101,7 +102,7 @@ body {
   align-items: center;
 }
 .storyContainerText {
-  height: 33vh;
+  height: 40vh;
   /* background: blue; */
   display: flex;
   justify-content: space-evenly;
@@ -109,8 +110,9 @@ body {
 }
 
 .storyContent {
+  font-family: "Source Code Pro", monospace;
   line-height: 19.5px;
-  width: 40%;
+  width: 50%;
 }
 
 .video1 {
@@ -183,7 +185,7 @@ body {
 }
 .videoConfig {
   width: 100%;
-  max-height: 79vh;
+  height: 79vh;
 }
 
 .map {
