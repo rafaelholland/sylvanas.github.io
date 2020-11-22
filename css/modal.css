@@ -72,15 +72,14 @@
 .modal-map {
   background: #1a1b1f;
   color: white;
-  width: 80%;
-  height: 85vh;
-  border: 10px solid black;
+  width: 76%;
+  height: 77vh;
   position: relative;
   display: flex;
   justify-content: center;
 }
 .modal-body-map {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

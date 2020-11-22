@@ -187,22 +187,56 @@ botaoAbrir7.addEventListener('click', abrirModal7);
 botaoFechar7.addEventListener('click', fecharModal7);
 containerModal7.addEventListener('click', cliqueForaModal7);
 
+// Pin 1 fim
 
+// Inicio pin 2
+const botaoAbrir8 = document.querySelector("#abrir8");
+const botaoFechar8 = document.querySelector('#fechar8');
+const containerModal8 = document.querySelector("#container8");
 
-function flechaScroll(){
-  var flecha = document.getElementById("flechaId");
-  var arco = document.getElementById("arcoId");
-  setTimeout(() => {
-    var mapaScroll = document.getElementById("scrollMap");
-    var audio = document.getElementById("audioArrow");
-
-    audio.play();
-    arco.classList.add("arcoNovo");
-    mapaScroll.scrollIntoView();
-  }, 300);
-
-  setTimeout(() => {
-    
-    flecha.classList.add("batata");
-  }, 1500);
+function abrirModal8(){
+  event.preventDefault();
+  this
+  containerModal8.classList.add('ativo');
 }
+
+function fecharModal8(event){
+  event.preventDefault();
+  containerModal8.classList.remove('ativo');
+}
+
+function cliqueForaModal8(event){
+  if(event.target === this){
+    fecharModal8(event);
+}}
+
+botaoAbrir8.addEventListener('click', abrirModal8);
+botaoFechar8.addEventListener('click', fecharModal8);
+containerModal8.addEventListener('click', cliqueForaModal8);
+// Fim pin 2
+// Inicio pin 3 - Teldrassil
+const botaoAbrir9 = document.querySelector("#abrir9");
+const botaoFechar9 = document.querySelector('#fechar9');
+const containerModal9 = document.querySelector("#container9");
+
+function abrirModal9(){
+  event.preventDefault();
+  this
+  containerModal9.classList.add('ativo');
+}
+
+function fecharModal9(event){
+  event.preventDefault();
+  containerModal9.classList.remove('ativo');
+}
+
+function cliqueForaModal9(event){
+  if(event.target === this){
+    fecharModal9(event);
+}}
+
+botaoAbrir9.addEventListener('click', abrirModal9);
+botaoFechar9.addEventListener('click', fecharModal9);
+containerModal9.addEventListener('click', cliqueForaModal9);
+
+

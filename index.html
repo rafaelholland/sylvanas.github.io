@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/modal.css">
-    <link rel="stylesheet" href="./css/story.css">
+    <link rel="stylesheet" href="./css/pin-clicavel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
     <title>Sylvanas Windrunner</title>
 </head>
 
 <body>
-
+    <div id="imgSound" onclick="audioOn()"></div>
+    <audio loop id="audioSyl">
+        <source src="./audio/sylSong.mp3" type="audio/mp3">
+    </audio>
+    <audio loop id="audioFire">
+        <source src="./audio/fireSound.mp3" type="audio/mp3">
+    </audio>
     <div class="container">
         <div class="titles">
             <div class="principal-title">
@@ -187,10 +193,14 @@
             <div class="map-container">
                 <div class="map-controller">
                     <img src="./imagens/wow-map.png" class="map-img" id="teste">
+                    <!-- Icecrown -->
                     <img src="./imagens/mapaPin/pin1.png" class="pin1 abrir" id="abrir7">
+                    <!-- Silvermoon -->
                     <img src="./imagens/mapaPin/pin1.png" class="pin2 abrir" id="abrir8">
+                    <!-- Teldrasill -->
                     <img src="./imagens/mapaPin/pin1.png" class="pin3 abrir" id="abrir9">
                     <img src="./imagens/mapaPin/pin1.png" class="pin4 abrir" id="abrir10">
+                    <img src="./imagens/mapaPin/pin1.png" class="pin4 abrir" id="abrir11">
                 </div>
                 <!-- 1 Pin -->
 
@@ -293,6 +303,9 @@
             </div>
         </section>
         <!-- Fim video 6 -->
+        <!-- Fim vídeos história -->
+        <!-- Pin's Clicáveis -->
+        <!-- Pin 1 Icecrown -->
         <section class="modal-container-map" id="container7">
             <div class="modal-map">
                 <button id="fechar7" class="fechar-map">
@@ -300,28 +313,52 @@
                 </button>
                 <section class="modal-body-map">
                     <div class="container-map-content">
-                        <div class="title-map-content">
-                            <h2>Icecrown</h2>
+                        <div class="icecrown">
+                            <img src="./imagens/modal-map/icecrown.png" alt="">
                         </div>
-                        <div class="text-map-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium fuga, dolores,
-                            enim sint repellendus reprehenderit adipisci sit iure temporibus ipsam exercitationem
-                            consectetur doloremque totam eligendi mollitia aspernatur ratione! Facere.
-                        </div>
+                    </div>
 
                 </section>
             </div>
         </section>
-        <!-- Fim vídeos história -->
-        <!-- Pin's Clicáveis -->
-        <!-- Pin 1 -->
-
         <!-- Fim Pin 1 -->
-        <!-- Pin 2 -->
+        <!-- Pin 2 Silvermoon -->
+        <section class="modal-container-map" id="container8">
+            <div class="modal-map">
+                <button id="fechar8" class="fechar-map">
+                    X
+                </button>
+                <section class="modal-body-map">
+                    <div class="container-map-content">
+                        <div class="icecrown">
+                            <img src="./imagens/modal-map/" alt="">
+                        </div>
+                    </div>
 
+                </section>
+            </div>
+        </section>
         <!-- Fim Pin 2 -->
+        <!-- Pin 4 - Teldrassil -->
+        <section class="modal-container-map" id="container9">
+            <div class="modal-map">
+                <button id="fechar9" class="fechar-map">
+                    X
+                </button>
+                <section class="modal-body-map">
+                    <div class="container-map-content teldrasilBack">
+                        <div class="teldrasil">
+                            <div></div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+        <!-- Fim pin 4 -->
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/extra.js"></script>
 </body>
 
 </html>

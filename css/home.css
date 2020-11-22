@@ -27,8 +27,20 @@ html {
 body {
   background-image: url(../imagens/teste-img.jpg);
 }
+#imgSound{
+  z-index: 1000000;
+  background-image: url(../imagens/AudioImg/soundOn.png);
+  background-size: cover;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 2%;
+  left: 2%;
+}
+
+
 .titles {
-  z-index: 10000000;
+  z-index: 10000;
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -111,13 +123,53 @@ body {
 .storyContent {
   background-size: cover;
   font-family: "Source Code Pro", monospace;
-  line-height: 19.5px;
+  line-height: 21.5px;
   width: 50%;
 }
+.story {
+  margin-top: -5px;
+  background-image: url("../imagens/background-sylvanas.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.storyPart3,
+.storyPart4,
+.storyPart5 {
+  height: 33vh;
+  /* background: blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.storyPart1,
+.storyPart2,
+.storyPart6,
+.storyPart7,
+.storyPart8,
+.storyPart9 {
+  height: 50vh;
+  /* background: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.story1 {
+  width: 40%;
+}
+.imgStory1 {
+  cursor: url("../imagens/cursores/cursor-pointer.png"), auto;
+  height: 95px;
+  /* width: 228px; */
+}
+.imgStory1:hover {
+  height: 100px;
+}
+
 
 .video1 {
-  height: 60%;
-  width: 36%;
+  height: 61%;
+  width: 37%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imagens/story-images/story1/story1.png);
@@ -127,8 +179,8 @@ body {
 }
 
 .video2 {
-  height: 60%;
-  width: 36%;
+  height: 61%;
+  width: 37%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imagens/story-images/story2/arthas.png);
@@ -137,8 +189,8 @@ body {
   justify-content: center;
 }
 .video3 {
-  height: 60%;
-  width: 36%;
+  height: 61%;
+  width: 37%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imagens/story-images/story3/warchief.png);
@@ -147,8 +199,8 @@ body {
   justify-content: center;
 }
 .video4 {
-  height: 60%;
-  width: 36%;
+  height: 61%;
+  width: 37%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imagens/story-images/story7/teldrasil.png);
@@ -157,8 +209,8 @@ body {
   justify-content: center;
 }
 .video5 {
-  height: 60%;
-  width: 36%;
+  height: 61%;
+  width: 37%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imagens/story-images/story8/x1bolado.png);
@@ -167,8 +219,8 @@ body {
   justify-content: center;
 }
 .video6 {
-  height: 60%;
-  width: 36%;
+  height: 61%;
+  width: 37%;;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imagens/story-images/story9/lich-king.png);
@@ -212,10 +264,10 @@ body {
   right: 15%;
 }
 .pin3 {
-  top: 42%;
-  height: 50px;
-  position: absolute;
-  left: 27%;
+  top: 33%;
+    height: 50px;
+    position: absolute;
+    left: 23%;
 }
 .pin4 {
   top: 33%;
