@@ -82,8 +82,7 @@ body {
   bottom: 0;
 }
 
-.videoBG {
-  overflow-x: hidden;
+.videoBackground {
   width: 100%;
 }
 
